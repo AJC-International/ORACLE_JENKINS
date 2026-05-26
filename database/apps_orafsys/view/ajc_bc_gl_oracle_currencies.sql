@@ -1,0 +1,6 @@
+
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "APPS_ORAFSYS"."AJC_BC_GL_ORACLE_CURRENCIES" ("CURRENCY_CODE") AS 
+  SELECT currency_code
+    FROM gl_currencies
+GROUP BY currency_code
+ORDER BY currency_code
